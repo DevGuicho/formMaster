@@ -1,0 +1,59 @@
+.fwrapper{
+    background-color: rgb(192, 193, 194);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    
+}
+
+.ftop{
+    background-color: rgb(167, 15, 61);
+    width: 95%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.stimg{
+    width: 5%;
+    height: 75px;
+    align-items: center;
+}
+.fttext{
+    width: 50%;
+    height: 45px;
+    flex-direction: column;
+    color: white;
+}
+.fcont{
+    background-color: rgb(192, 193, 194);
+    width: 95%;
+    height: 500px;
+    display: flex;
+    border: 1px solid black;
+}
+.faside{
+    background-color: rgb(167, 15, 61);
+    width: 5%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.sasimg1{
+    width: 100%;
+    height: 75px;
+   align-self: flex-start;
+}
+
+.sasimg2{
+    width: 100%;
+    height: 75px;
+   align-self: flex-end;
+}
+
+
+

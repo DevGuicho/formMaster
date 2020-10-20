@@ -192,12 +192,19 @@
           <div class="block">
             <h3>Curriculum Vitae</h3>
             <div class="row">
-              <div class="input__control">
-                <label for="cv"
+              <div class="input__control--cv complete">
+                <label class="label"
                   >Anexar a esta solicitud curriculum vitae con
                   fotografía</label
                 >
-                <input type="file" name="cv" id="cv" />
+                <div class="dropfile">
+                  <i class="fas fa-upload"></i>
+                  <span class="dropfile__text">Drop your file here</span>
+                </div>
+                <div class="dropfile__label">
+                  <label for="cv">Upload File</label>
+                  <input type="file" name="cv" id="cv" class="input__file" />
+                </div>
               </div>
             </div>
           </div>
@@ -213,18 +220,19 @@
         </form>
       </section>
     </div>
-    <footer>
+    <footer class="footer">
       <img
-        src="./assets/img/300px-Logo_Instituto_Politécnico_Nacional.png"
+        src="./assets/img/IPN_Rodrigo_OSegueda.jpg"
         alt="logo IPN"
+        class="footer__img--ipn"
       />
-      <div>
-        <p>
+      <div class="footer__text">
+        <p class="footer__text--title">
           Instituto Politécnico Nacional <br />
           Centro de Investigación en Ciencia Aplicada y Tecnología Avanzada
           Unidad Legaria
         </p>
-        <p>
+        <p class="footer__text--direction">
           D.R. Instituto Politécnico Nacional (IPN). Av. Luis Enrique Erro S/N,
           Unidad Profesional Adolfo López Mateos, Zacatenco, Alcaldía Gustavo A.
           Madero, <br />
@@ -232,7 +240,11 @@
           29 63 00.
         </p>
       </div>
-      <img src="./assets/img/Logo_CICATA.png" alt="Logo CICATA" />
+      <img
+        src="./assets/img/Logo_CICATA.png"
+        alt="Logo CICATA"
+        class="footer__img--cigata"
+      />
     </footer>
   </body>
 </html>

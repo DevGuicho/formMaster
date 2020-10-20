@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background: #80004a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title--img {
+  width: 58px;
+}
+.header__text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+.header__text--ipn {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+}
+.header__text--slogan {
+  display: block;
+  font-size: 12px;
+}
+.header__panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 20px;
+}
+.header__panel--notifications {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.panel__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  border-left: 2px solid white;
+}
+.panel__user--text {
+  display: block;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.panel__user--icon {
+  font-size: 21px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.icon__user {
+  font-size: 20px;
+}

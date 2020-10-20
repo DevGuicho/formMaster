@@ -9,28 +9,35 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/styles/Form.css" />
     <title>Form</title>
   </head>
   <body>
-    <head>
-      <div>
+    <header class="header">
+      <div class="header__title">
         <img
-          src="./assets/img//300px-Logo_Instituto_Politécnico_Nacional.png"
+          src="./assets/img/IPN_Rodrigo_OSegueda.jpg"
           alt="Logo IPN"
+          class="header__title--img"
         />
-        <div>
-          <span>Instituto Politécnico Nacional </span>
-          <span>"La técnica al servicio de la patria"</span>
+        <div class="header__text">
+          <span class="header__text--ipn">Instituto Politécnico Nacional </span>
+          <span class="header__text--slogan"
+            >"La técnica al servicio de la patria"</span
+          >
         </div>
       </div>
-      <div>
-        <i class="fas fa-bell"></i>
-        <div>
-          <span>Luis Vazquez</span>
-          <i class="fas fa-angle-down"></i>
+      <div class="header__panel">
+        <i class="fas fa-bell header__panel--notifications"></i>
+        <div class="panel__user">
+          <div class="icon">
+            <i class="fas fa-user icon__user"></i>
+          </div>
+          <span class="panel__user--text">Luis Vazquez</span>
+          <i class="fas fa-angle-down panel__user--icon"></i>
         </div>
       </div>
-    </head>
+    </header>
     <aside>
       <div>
         <i class="fas fa-arrow-left"></i>

@@ -190,7 +190,7 @@
             </div>
           </div>
           <div class="block">
-            <h3>Curriculum Vitae</h3>
+            <h3 class="block__title">Curriculum Vitae</h3>
             <div class="row">
               <div class="input__control--cv complete">
                 <label class="label"
@@ -208,13 +208,19 @@
               </div>
             </div>
           </div>
-          <div class="block--small">
-            <div class="row">
-              <div class="input__control">
-                <label for="maestria">Maestría</label>
-                <input type="text" name="maestria" id="maestria" />
+          <div class="block__small">
+            <div class="row center">
+              <div class="block__secondary">
+                <h3 class="block__title">Maestria</h3>
+                <div class="input__control complete">
+                  <label for="maestria">carrera</label>
+                  <input type="text" name="maestria" id="maestria" />
+                </div>
               </div>
-              <input type="submit" value="Submit" />
+              <button type="submit" class="submit">
+                <i class="fas fa-check"></i>
+                submit
+              </button>
             </div>
           </div>
         </form>

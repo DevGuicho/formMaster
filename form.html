@@ -38,175 +38,181 @@
         </div>
       </div>
     </header>
-    <aside class="aside">
-      <div class="aside__back">
-        <i class="fas fa-arrow-left"></i>
-      </div>
-      <ol class="aside__options">
-        <li class="aside__options--item">
-          <i class="fas fa-user-friends"></i>
-        </li>
-        <li class="aside__options--item"><i class="fas fa-home"></i></li>
-        <li class="aside__options--item"><i class="fas fa-cog"></i></li>
-      </ol>
-    </aside>
-    <section class="main">
-      <div>
-        <h2>SOLICITUD DE ADMISIÓN AL PROCESO DE INGRESO AL SEMESTRE A-2021</h2>
-        <p>
-          Por favor llene el siguiente formulario para completar sus solicitud
-        </p>
-      </div>
-      <form>
-        <div class="block">
-          <h3>Información Personal</h3>
-          <div class="row">
-            <div class="input__control">
-              <label for="name">Nombre</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div class="input__control">
-              <label for="lastName">Apellidos</label>
-              <input type="text" name="lastName" id="lastName" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="input__control">
-              <label for="birthPlace">Lugar de Nacimiento</label>
-              <input type="text" name="birthPlace" id="birthPlace" />
-            </div>
-            <div class="input__control">
-              <label for="birthdate">Fecha</label>
-              <input type="date" name="birthdate" id="birthdate" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="input__control">
-              <label for="adress">Domicilio</label>
-              <input type="text" name="adress" id="adress" />
-            </div>
-            <div class="input__control">
-              <label for="phone">Número de Celular</label>
-              <input type="tel" name="phone" id="phone" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="input__control">
-              <label for="nacionality">Nacionalidad</label>
-              <input type="text" name="nacionality" id="nacionality" />
-            </div>
-            <div class="input__control">
-              <label for="curp">CURP</label>
-              <input type="text" name="curp" id="curp" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="input__control">
-              <label for="email">Correo Electronico</label>
-              <input type="email" name="email" id="email" />
-            </div>
-            <div class="input__control">
-              <label for="skype">Cuenta de Skype</label>
-              <input type="email" name="skype" id="skype" />
-            </div>
-          </div>
+    <div class="row1">
+      <aside class="aside">
+        <div class="aside__back">
+          <i class="fas fa-arrow-left"></i>
         </div>
-        <div class="block">
-          <h3>Información General</h3>
-          <div class="row">
-            <div class="input__control">
-              <label for="instituto"
-                >Instituto donde ha realizado sus estudios profesionales</label
-              >
-              <input type="text" name="instituto" id="instituto" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="input__control">
-              <label for="carrera">Carrera</label>
-              <input type="text" name="carrera" id="carrera" />
-            </div>
-            <div class="input__control">
-              <label for="title">Titulado</label>
-              <input type="text" name="title" id="title" />
-            </div>
-            <div class="input__control">
-              <label for="titleCountry">País de titulación</label>
-              <input type="text" name="titleCountry" id="titleCountry" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="input__control">
-              <label for="experience">Experiencia Profesional</label>
-              <textarea
-                name="experience"
-                id="experience"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input__control">
-              <label for="teachingExperience">Experiencia Docente</label>
-              <textarea
-                name="teachingExperience"
-                id="teachingExperience"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input__control--row">
-              <label for="coursesBefore"
-                >Ha asistido a los cursos propedéuticos de este departamento
-                anteriormente</label
-              >
-              <input type="text" name="coursesBefore" id="coursesBefore" />
-            </div>
-            <div class="input__control--row">
-              <label for="years">¿En que años?</label>
-              <input type="text" name="years" id="years" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="input__control">
-              <label for="motive"
-                >Motivo por el cual desea ingresar al Posgrado y a que línea de
-                investigación desea integrarse</label
-              >
-              <textarea
-                name="motive"
-                id="motive"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-          </div>
+        <ol class="aside__options">
+          <li class="aside__options--item">
+            <i class="fas fa-user-friends"></i>
+          </li>
+          <li class="aside__options--item"><i class="fas fa-home"></i></li>
+          <li class="aside__options--item"><i class="fas fa-cog"></i></li>
+        </ol>
+      </aside>
+      <section class="main">
+        <div class="main__title">
+          <h2 class="main__title--text">
+            SOLICITUD DE ADMISIÓN AL PROCESO DE INGRESO AL SEMESTRE A-2021
+          </h2>
+          <p class="main__title--instructions">
+            Por favor llene el siguiente formulario para completar sus solicitud
+          </p>
         </div>
-        <div class="block">
-          <h3>Curriculum Vitae</h3>
-          <div class="row">
-            <div class="input__control">
-              <label for="cv"
-                >Anexar a esta solicitud curriculum vitae con fotografía</label
-              >
-              <input type="file" name="cv" id="cv" />
+        <form class="form">
+          <div class="block">
+            <h3 class="block__title">Información Personal</h3>
+            <div class="row">
+              <div class="input__control half">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="input__control half">
+                <label for="lastName">Apellidos</label>
+                <input type="text" name="lastName" id="lastName" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input__control half">
+                <label for="birthPlace">Lugar de Nacimiento</label>
+                <input type="text" name="birthPlace" id="birthPlace" />
+              </div>
+              <div class="input__control half">
+                <label for="birthdate">Fecha</label>
+                <input type="date" name="birthdate" id="birthdate" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input__control threeCuarter">
+                <label for="adress">Domicilio</label>
+                <input type="text" name="adress" id="adress" />
+              </div>
+              <div class="input__control cuarter">
+                <label for="phone">Número de Celular</label>
+                <input type="tel" name="phone" id="phone" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input__control cuarter">
+                <label for="nacionality">Nacionalidad</label>
+                <input type="text" name="nacionality" id="nacionality" />
+              </div>
+              <div class="input__control threeCuarter">
+                <label for="curp">CURP</label>
+                <input type="text" name="curp" id="curp" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input__control half">
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="input__control half">
+                <label for="skype">Cuenta de Skype</label>
+                <input type="email" name="skype" id="skype" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="block--small">
-          <div class="row">
-            <div class="input__control">
-              <label for="maestria">Maestría</label>
-              <input type="text" name="maestria" id="maestria" />
+          <div class="block">
+            <h3 class="block__title">Información General</h3>
+            <div class="row">
+              <div class="input__control complete">
+                <label for="instituto"
+                  >Instituto donde ha realizado sus estudios
+                  profesionales</label
+                >
+                <input type="text" name="instituto" id="instituto" />
+              </div>
             </div>
-            <input type="submit" value="Submit" />
+            <div class="row">
+              <div class="input__control third">
+                <label for="carrera">Carrera</label>
+                <input type="text" name="carrera" id="carrera" />
+              </div>
+              <div class="input__control third">
+                <label for="title">Titulado</label>
+                <input type="text" name="title" id="title" />
+              </div>
+              <div class="input__control third">
+                <label for="titleCountry">País de titulación</label>
+                <input type="text" name="titleCountry" id="titleCountry" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input__control complete">
+                <label for="experience">Experiencia Profesional</label>
+                <textarea
+                  name="experience"
+                  id="experience"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input__control complete">
+                <label for="teachingExperience">Experiencia Docente</label>
+                <textarea
+                  name="teachingExperience"
+                  id="teachingExperience"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input__control--row">
+                <label for="coursesBefore"
+                  >Ha asistido a los cursos propedéuticos de este departamento
+                  anteriormente</label
+                >
+                <input type="text" name="coursesBefore" id="coursesBefore" />
+              </div>
+              <div class="input__control--row">
+                <label for="years">¿En que años?</label>
+                <input type="text" name="years" id="years" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input__control complete">
+                <label for="motive"
+                  >Motivo por el cual desea ingresar al Posgrado y a que línea
+                  de investigación desea integrarse</label
+                >
+                <textarea
+                  name="motive"
+                  id="motive"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
           </div>
-        </div>
-      </form>
-    </section>
+          <div class="block">
+            <h3>Curriculum Vitae</h3>
+            <div class="row">
+              <div class="input__control">
+                <label for="cv"
+                  >Anexar a esta solicitud curriculum vitae con
+                  fotografía</label
+                >
+                <input type="file" name="cv" id="cv" />
+              </div>
+            </div>
+          </div>
+          <div class="block--small">
+            <div class="row">
+              <div class="input__control">
+                <label for="maestria">Maestría</label>
+                <input type="text" name="maestria" id="maestria" />
+              </div>
+              <input type="submit" value="Submit" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
     <footer>
       <img
         src="./assets/img/300px-Logo_Instituto_Politécnico_Nacional.png"

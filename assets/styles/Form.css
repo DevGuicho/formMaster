@@ -213,6 +213,7 @@ body {
   font-size: 12px;
   margin-top: 5px;
   margin-bottom: 0;
+  display: none;
 }
 .disable {
   display: none;

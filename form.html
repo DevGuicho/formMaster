@@ -38,8 +38,9 @@
         </div>
       </div>
     </header>
-    <div class="row1">
-      <aside class="aside">
+
+    <aside class="aside">
+      <div class="aside__content">
         <div class="aside__back">
           <i class="fas fa-arrow-left"></i>
         </div>
@@ -50,8 +51,11 @@
           <li class="aside__options--item"><i class="fas fa-home"></i></li>
           <li class="aside__options--item"><i class="fas fa-cog"></i></li>
         </ol>
-      </aside>
-      <section class="main">
+      </div>
+    </aside>
+
+    <section class="main">
+      <form class="main__content" id="form">
         <div class="main__title">
           <h2 class="main__title--text">
             SOLICITUD DE ADMISIÓN AL PROCESO DE INGRESO AL SEMESTRE A-2021
@@ -60,172 +64,332 @@
             Por favor llene el siguiente formulario para completar sus solicitud
           </p>
         </div>
-        <form class="form">
-          <div class="block">
-            <h3 class="block__title">Información Personal</h3>
-            <div class="row">
-              <div class="input__control half">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div class="input__control half">
-                <label for="lastName">Apellidos</label>
-                <input type="text" name="lastName" id="lastName" />
-              </div>
+
+        <div class="formulario">
+          <h3 class="form__title">Información Personal</h3>
+
+          <!-- Grupo: Nombre -->
+          <div class="form__group p3" id="nameGroup">
+            <label for="name" class="form__label">Nombre</label>
+            <div class="form__group--input">
+              <input type="text" name="name" id="name" class="form__input" />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
             </div>
-            <div class="row">
-              <div class="input__control half">
-                <label for="birthPlace">Lugar de Nacimiento</label>
-                <input type="text" name="birthPlace" id="birthPlace" />
-              </div>
-              <div class="input__control half">
-                <label for="birthdate">Fecha</label>
-                <input type="date" name="birthdate" id="birthdate" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="input__control threeCuarter">
-                <label for="adress">Domicilio</label>
-                <input type="text" name="adress" id="adress" />
-              </div>
-              <div class="input__control cuarter">
-                <label for="phone">Número de Celular</label>
-                <input type="tel" name="phone" id="phone" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="input__control cuarter">
-                <label for="nacionality">Nacionalidad</label>
-                <input type="text" name="nacionality" id="nacionality" />
-              </div>
-              <div class="input__control threeCuarter">
-                <label for="curp">CURP</label>
-                <input type="text" name="curp" id="curp" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="input__control half">
-                <label for="email">Correo Electronico</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="input__control half">
-                <label for="skype">Cuenta de Skype</label>
-                <input type="email" name="skype" id="skype" />
-              </div>
-            </div>
+            <p class="formulario__input--error">
+              Este campo no debe contener numeros ni caracteres especiales
+            </p>
           </div>
-          <div class="block">
-            <h3 class="block__title">Información General</h3>
-            <div class="row">
-              <div class="input__control complete">
-                <label for="instituto"
-                  >Instituto donde ha realizado sus estudios
-                  profesionales</label
-                >
-                <input type="text" name="instituto" id="instituto" />
-              </div>
+
+          <!-- Grupo: Apellidos -->
+          <div class="form__group p3" id="lastNameGroup">
+            <label for="lastName" class="form__label">Apellidos</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
             </div>
-            <div class="row">
-              <div class="input__control third">
-                <label for="carrera">Carrera</label>
-                <input type="text" name="carrera" id="carrera" />
-              </div>
-              <div class="input__control third">
-                <label for="title">Titulado</label>
-                <input type="text" name="title" id="title" />
-              </div>
-              <div class="input__control third">
-                <label for="titleCountry">País de titulación</label>
-                <input type="text" name="titleCountry" id="titleCountry" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="input__control complete">
-                <label for="experience">Experiencia Profesional</label>
-                <textarea
-                  name="experience"
-                  id="experience"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input__control complete">
-                <label for="teachingExperience">Experiencia Docente</label>
-                <textarea
-                  name="teachingExperience"
-                  id="teachingExperience"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input__control--row">
-                <label for="coursesBefore"
-                  >Ha asistido a los cursos propedéuticos de este departamento
-                  anteriormente</label
-                >
-                <input type="text" name="coursesBefore" id="coursesBefore" />
-              </div>
-              <div class="input__control--row">
-                <label for="years">¿En que años?</label>
-                <input type="text" name="years" id="years" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="input__control complete">
-                <label for="motive"
-                  >Motivo por el cual desea ingresar al Posgrado y a que línea
-                  de investigación desea integrarse</label
-                >
-                <textarea
-                  name="motive"
-                  id="motive"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-            </div>
+            <p class="formulario__input--error">
+              Este campo no debe contener numeros ni caracteres especiales
+            </p>
           </div>
-          <div class="block">
-            <h3 class="block__title">Curriculum Vitae</h3>
-            <div class="row">
-              <div class="input__control--cv complete">
-                <label class="label"
-                  >Anexar a esta solicitud curriculum vitae con
-                  fotografía</label
-                >
+
+          <!-- Grupo: Lugar de Nacimiento -->
+          <div class="form__group p4" id="birthPlaceGroup">
+            <label for="birthPlace" class="form__label"
+              >Lugar de Nacimiento</label
+            >
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="birthPlace"
+                id="birthPlace"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">
+              Este campo no debe contener numeros ni caracteres especiales
+            </p>
+          </div>
+
+          <!-- Grupo: Fecha de Nacimiento -->
+          <div class="form__group p2">
+            <label for="birthDate" class="form__label"
+              >Fecha de Nacimiento</label
+            >
+            <div class="form__group--input">
+              <input
+                type="date"
+                name="birthDate"
+                id="birthDate"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
+
+          <!-- Grupo: Domicilio -->
+          <div class="form__group p4" id="adressGroup">
+            <label for="adress" class="form__label">Domicilio</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">
+              Este campo no debe tener caracteres especiales
+            </p>
+          </div>
+
+          <!-- Grupo: Numero -->
+          <div class="form__group p2" id="telephoneGroup">
+            <label for="telephone" class="form__label">Numero de Celular</label>
+            <div class="form__group--input">
+              <input
+                type="tel"
+                name="telephone"
+                id="telephone"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">Ingrese un formato valido</p>
+          </div>
+
+          <!-- Grupo: Nacionalidad -->
+          <div class="form__group p2" id="nacionalityGroup">
+            <label for="nacionality" class="form__label">Nacionalidad</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="nacionality"
+                id="nacionality"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">
+              El Este campo no debe contener numeros ni caracteres especiales
+            </p>
+          </div>
+
+          <!-- Grupo: CURP -->
+          <div class="form__group p4" id="curpGroup">
+            <label for="email" class="form__label">CURP</label>
+            <div class="form__group--input">
+              <input type="text" name="curp" id="curp" class="form__input" />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">
+              Ingrese un formato valido de CURP
+            </p>
+          </div>
+
+          <!-- Grupo: email -->
+          <div class="form__group p3" id="emailGroup">
+            <label for="email" class="form__label">Correo Electronico</label>
+            <div class="form__group--input">
+              <input type="email" name="email" id="email" class="form__input" />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">
+              Ingrese un formato valido de correo
+            </p>
+          </div>
+
+          <!-- Grupo: skype -->
+          <div class="form__group p3" id="skypeGroup">
+            <label for="skype" class="form__label">Cuenta de Skype</label>
+            <div class="form__group--input">
+              <input type="email" name="skype" id="skype" class="form__input" />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">
+              Ingrese un formato valido de correo
+            </p>
+          </div>
+        </div>
+
+        <div class="formulario">
+          <h3 class="form__title">Información General</h3>
+
+          <!-- Grupo: Institución de Estudios -->
+          <div class="form__group p6">
+            <label for="institute" class="form__label"
+              >Instituto donde ha realizado sus estudios profesionales</label
+            >
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="institute"
+                id="institute"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
+
+          <!-- Grupo: Carrera -->
+          <div class="form__group p2">
+            <label for="carrer" class="form__label">Carrera</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="carrer"
+                id="carrer"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
+
+          <!-- Grupo: Titulado -->
+          <div class="form__group p2">
+            <label for="title" class="form__label">Titulado</label>
+            <div class="form__group--input">
+              <input type="text" name="title" id="title" class="form__input" />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
+
+          <!-- Grupo: País de la institución -->
+          <div class="form__group p2">
+            <label for="titleCountry" class="form__label"
+              >País de la institución</label
+            >
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="titleCountry"
+                id="titleCountry"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
+
+          <!-- Grupo: Experiencia Profesional -->
+          <div class="form__group p6">
+            <label for="professionalExperience" class="form__label"
+              >Experiencia Profesional</label
+            >
+            <div class="form__group--input">
+              <textarea
+                name="professionalExperience"
+                id="professionalExperience"
+                class="form__input--text-area"
+              ></textarea>
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
+
+          <!-- Grupo: Experiencia Docente -->
+          <div class="form__group p6">
+            <label for="docentExperience" class="form__label"
+              >Experiencia Docente</label
+            >
+            <div class="form__group--input">
+              <textarea
+                name="docentExperience"
+                id="docentExperience"
+                class="form__input--text-area"
+              ></textarea>
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
+
+          <!-- Grupo: Motivos -->
+          <div class="form__group p6">
+            <label for="motivation" class="form__label"
+              >Motivo por el cual desea ingresar al Posgrado y a que línea de
+              investigación desea integrarse</label
+            >
+            <div class="form__group--input">
+              <textarea
+                name="motivation"
+                id="motivation"
+                class="form__input--text-area"
+              ></textarea>
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="formulario p4 r2">
+            <h3 class="form__title">Curriculum Vitae</h3>
+
+            <!-- Grupo: CV -->
+            <div class="form__group p6">
+              <label for="institution" class="form__label"
+                >Anexar a esta solicitud curriculum vitae con fotografía</label
+              >
+              <div class="form__group--input">
                 <div class="dropfile">
                   <i class="fas fa-upload"></i>
                   <span class="dropfile__text">Drop your file here</span>
                 </div>
-                <div class="dropfile__label">
-                  <label for="cv">Upload File</label>
-                  <input type="file" name="cv" id="cv" class="input__file" />
-                </div>
+                <input
+                  type="file"
+                  name="cv"
+                  id="cv"
+                  class="form__input--file"
+                />
+                <label for="cv" class="dropfile__label">Upload</label>
               </div>
+              <p class="formulario__input--error">El usuario</p>
             </div>
           </div>
-          <div class="block__small">
-            <div class="row center">
-              <div class="block__secondary">
-                <h3 class="block__title">Maestria</h3>
-                <div class="input__control complete">
-                  <label for="maestria">carrera</label>
-                  <input type="text" name="maestria" id="maestria" />
-                </div>
+          <div class="formulario p2 r1">
+            <h3 class="form__title">Maestria</h3>
+
+            <!-- Grupo: Maestria -->
+            <div class="form__group p6">
+              <label for="master" class="form__label"
+                >Seleccione una maestría</label
+              >
+              <div class="form__group--input">
+                <input
+                  type="text"
+                  name="master"
+                  id="master"
+                  class="form__input"
+                />
+                <i
+                  class="formulario__validacion--estado fas fa-times-circle"
+                ></i>
               </div>
-              <button type="submit" class="submit">
-                <i class="fas fa-check"></i>
-                submit
-              </button>
+              <p class="formulario__input--error">El usuario</p>
             </div>
           </div>
-        </form>
-      </section>
-    </div>
+          <div class="formulario__panel p2 r1">
+            <p class="message disable" id="panelFor">
+              Por favor llene correctamente el formulario
+            </p>
+            <button class="btn__submit">
+              <i class="fas fa-check"></i> Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
     <footer class="footer">
       <img
         src="./assets/img/IPN_Rodrigo_OSegueda.jpg"
@@ -252,5 +416,6 @@
         class="footer__img--cigata"
       />
     </footer>
+    <script src="./js/validations.js"></script>
   </body>
 </html>

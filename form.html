@@ -24,7 +24,7 @@
               <div class="topimg2">
                 <i class="fas fa-grip-lines-vertical"></i>
               </div>
-              <div class="topimg2">
+              <div class="topimgus">
                 <i class="fas fa-user-circle"></i>
               </div>
               <select class="topboxy">
@@ -64,36 +64,37 @@
                 <p>Por favor llene el siguiente formulario para completar su solicitud</p>
             </div>
             <form class="form"> 
+                <a>Información Personal</a>
               <div class="fila">
                 <div class="contfila">
-                  Nombre(s)
-                  <input type="text" class="input">
+                 <label for="nombre">Nombre(s)</label>
+                  <input type="text" name="nombre" class="input">
                 </div>
                 <div class="contfila">
-                  Apellidos
-                  <input type="text" class="input">
+                  <label for="apellido">Apellidos</label>
+                  <input type="text" name="apellido" class="input">
                 </div>
               </div>
 
               <div class="fila">
                 <div class="contfila">
-                  Lugar de Nacimiento
-                  <input type="text" class="input">
+                  <label for="lugar">Lugar de Nacimiento</label>
+                  <input type="text" name="lugar" class="input">
                 </div>
                 <div class="contfila">
-                  Fecha
-                  <input type="date" class="input">
+                  <label for="fecha">Fecha</label>
+                  <input type="date" name="fecha" class="input">
                 </div>
               </div>
 
               <div class="fila1">
                 <div class="contfila1">
-                  Domicilio
-                  <input type="text" class="input">
+                  <label for="domicilio">Domicilio</label>
+                  <input type="text" name="domicilio" class="input">
                 </div>
                 <div class="contfila2">
-                  Numero de Celular
-                  <input type="text" class="input">
+                   <label for="NumCel">Numero de Celular</label>
+                  <input type="text" name="NumCel" class="input">
                 </div>
               </div>
 
@@ -106,7 +107,7 @@
               </select>
                 -->
                 <div class="contfila3">
-                  Nacionalidad
+                  <label for="nacionalidad">Nacionalidad</label>
                   <select class="contselect">
                     <option value="A">Mexicano</option>
                     <option value="B">Argentino</option>
@@ -115,29 +116,148 @@
                 
                 </div>
                 <div class="contfila4">
-                  CURP
-                  <input type="text" class="input">
+                  <label for="curp">CURP</label>
+                  <input type="text" name="curp" class="input">
                 </div>
               </div>
 
               <div class="fila">
                 <div class="contfila">
-                  Correo Electrónico
-                  <input type="text" class="input">
+                  <label for="correo">Correo Electrónico</label>
+                  <input type="text" name="correo" class="input">
                 </div>
                 <div class="contfila">
-                  Cuenta Skype
-                  <input type="text" class="input">
+                  <label for="cuenta">Cuenta Skype</label>
+                  <input type="text" name="cuenta" class="input">
+                </div>
+              </div>
+            </form>
+ 
+            <!--Formulario 2-->
+            <form class="form2">
+              <a>Información General</a>
+              <div class="contf2-fila">
+                 <label for="institutoProd">Instituto donde ha realizado sus estudios profesionales</label>
+                  <input type="text" name="institutoProd" class="input">
+              </div>
+
+              <div class="f2-fila2">
+                <div class="contf2-fila">
+                  <label for="carrera">Carrera</label>
+                  <input type="text" name="carrera" class="input">
+                </div>
+                <div class="contf2-fila">
+                  <label for="titulado">Titulación</label>
+                  <select class="contselect">
+                    <option value="A">Sí</option>
+                    <option value="B">No</option>
+                  </select>
+                </div>
+                <div class="contf2-fila">
+                  <label for="paisTitulacion">País de la Titulación</label>
+                  <input type="text" name="paisTitulacion" class="input">
                 </div>
               </div>
 
+              <div class="contf2-fila--text">
+                  <label for="experienciaPro">Experiencia Profesional</label>
+                  <textarea class="textarea" name="experienciaPro" rows="10" cols="40"></textarea>
+                </div>
 
+              <div class="contf2-fila--text">
+                  <label for="expDo">Experiencia Docente</label>
+                  <textarea class="textarea" name="expDo" rows="10" cols="40"></textarea>
+              </div>
 
+              <div class="f2-fila5">
+                <div class="contf2-fila5">
+                  <label for="cursos">Ha asistido a los cursos propedéuticos de este departamento anteriormente</label>
+                  <select class="contselect">
+                    <option value="A">Sí</option>
+                    <option value="B">No</option>
+                  </select>
+                </div>
+                <div class="contf2-fila6">
+                  <label for="añoscurso">¿En qué años?</label>
+                  <input type="text" name="añoscurso" class="input">
+                </div>
+              </div>
+
+              <div class="contf2-fila--text">
+                <label for="motivo">Motivo por el cual desea ingresar al Posgrado y a que linea de investigación desea integrarse</label>
+                <textarea class="textarea" name="motivo" rows="10" cols="40"></textarea>
+            </div>
 
             </form>
+
+            <form class=form3>
+              <a>Curriculum Vitae</a>
+              <div class="contf2-fila">
+                 <label for="cv">Instituto donde ha realizado sus estudios profesionales</label>
+                  <input type="file" name="cv" class="input1">
+              </div>
+            </form>
+            
+            <div class="blockMaestria">
+              <form class=form4>
+                <a>Maestría</a>
+                <h7>Seleccione una opción</h7>
+                <div class="contf2-fila-m">
+                  <label for="master">Carrera</label>
+                  <select class="contselect">
+                    <option value="A">Opción 1</option>
+                    <option value="B">Opción 2</option>
+                  </select>
+                </div>
+              </form>
+
+              <div class="botones">
+              <button type="reset" class="reset">
+                <i class="fas fa-times"></i>
+                cancel
+              </button>
+
+              <button type="submit" class="submit">
+                <i class="fas fa-check"></i>
+                submit
+              </button>
+            </div>
+              
+
+            </div>
+
+            <foo
+            ter class="footer">
+              <div class="footer1"> 
+                <img class="footerimg1" src="assets/img/logo_ipn.jpg">
+              </div>   
+              
+              <div class="footer2">
+                <h8>Instituto Politecnico Nacional</h8>
+                <div>
+                  <h8>Centro de Investigación en Ciencia Aplicada y Tecnología Avanzada Unidad Legaria</h8>
+                  <p></p>
+                </div>
+                <div>
+                  <h9>D.R. Instituto Politécnico Nacional(IPN). Av. Luis Enrique Erro S/N, Unidad Profesional Adolfo López Mateos, Zacatenco, Alcaldía Gustavo A. Madero,</h9>
+                </div>
+                <div>
+                  <h9>C.P. 07738, Ciudad de México, 2019, Conmutador: 55 57 29 60 00 / 55 57 29 63 00.</h9>
+                </div>
+                </div>
+
+              <div class="footer3">
+                <img class="footerimg2" src="assets/img/logo_CICATA.png">
+              </div> 
+            </footer>
+            
+            
+
           </section>
 
         </aside>
+
+        
   
     </body>
 

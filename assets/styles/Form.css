@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    padding: 0%;
 }
 
 .header{
@@ -38,13 +37,37 @@
     height: 75px;
     font-size: 35px;
     justify-content: flex-end;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
 }
+
+.topimg2:hover{
+  background: #A0005D;
+}
+
+.topimgus{
+    width: 10%;
+    height: 75px;
+    font-size: 35px;
+    justify-content: flex-end;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
 .topboxy{
-    width: 25%;
+    width: 70%;
     height: 75px;
     background-color: #80004A;
     color: #F1F2F5;
+    border-color:  #80004A;
 }
+
+.topboxy:hover{
+  background: #A0005D;
+}
+
 .toptext1{
     width: 90%;
     height: 75px;
@@ -86,11 +109,19 @@
     height: 75px;
     font-size: 35px;
     color: #F1F2F5;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    padding-top: 15px;
+}
+
+.asideimg:hover{
+    background: #A0005D;
 }
 
 .contbox{
     width: 89%;
-    height: 525px;
+    height: 2100px;
     background-color: #F1F2F5;
     display: flex;
     flex-direction: column;
@@ -107,7 +138,7 @@
 }
 .form{
     width: 90%;
-    height: 350px;
+    height:420px;
     border: 1px solid rgb(180, 179, 179);
     background-color: white;
     align-self: center;
@@ -119,7 +150,6 @@
     height: 65px;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .contfila{
@@ -134,8 +164,14 @@
     background-color: #F1F2F5;
     border: 1px solid rgb(180, 179, 179);
     height: 30px;
+    border-radius: 7px;
 }
-
+.input1{
+    background-color: #F1F2F5;
+    border: 1px solid rgb(180, 179, 179);
+    height: 300px;
+    border-radius: 7px;
+}
 .fila1{
     width: 100%;
     height: 65px;
@@ -189,4 +225,237 @@
     background-color: #F1F2F5;
     border: 1px solid rgb(180, 179, 179);
     height: 35px;
+}
+
+.form label, .form2 label, .form3 label, .form4 label{
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form a, .form2 a, .form3 a, .form4 a{
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 15px 10px;
+}
+
+.form2{
+    width: 90%;
+    height:670px;
+    border: 1px solid rgb(180, 179, 179);
+    background-color: white;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contf2-fila{
+    width: 97%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+}
+
+.f2-fila2{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form select, .form2 select, .form4 select{
+    border-radius: 7px;
+}
+
+.contf2-fila--text{
+    width: 97%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+
+.textarea{
+    background-color: #F1F2F5;
+    border: 1px solid rgb(180, 179, 179);
+    border-radius: 7px;
+}
+
+.f2-fila5{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contf2-fila5{
+    width: 58%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 15px ;
+    align-items: center;
+}
+
+.contf2-fila5 .contselect{
+    width: 15%;
+}
+
+.contf2-fila6{
+    width: 25%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.form3{
+    width: 90%;
+    height:300px;
+    border: 1px solid rgb(180, 179, 179);
+    background-color: white;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.blockMaestria{
+    width: 90%;
+    height:190px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.form4{
+    width: 90%;
+    height:190px;
+    border: 1px solid rgb(180, 179, 179);
+    background-color: white;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contf2-fila-m{
+    width: 70%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px;
+}
+
+.form4 h7{
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.reset{
+  font-family: 'Open Sans';
+  outline: 0;
+  background: #D4100B;
+  width: 20%;
+  border: 0;
+  padding: 5px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 7px;
+}
+
+.submit{
+    font-family: 'Open Sans';
+    outline: 0;
+    background: #1F8824;
+    width: 20%;
+    border: 0;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 7px;
+    margin-left: 30px;
+}
+
+.blockMaestria .submit:hover{
+    background: #51ab13;
+}
+
+.blockMaestria .reset:hover{
+    background: #ff2a23;
+}
+
+.botones{
+    width: 70%;
+    height:190px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 300px;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 50px;
+    background: #80004A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 160px
+}
+
+.footerimg1{
+    width: 90%;
+    height: 100px;
+}
+
+.footerimg2{
+    width: 100%;
+    height: 100px;
+}
+
+.footer1{
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer2{
+    width: 150%;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer3{
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer2 h8{
+    font-family: 'Open sans';
+    color: #F1F2F5;
+    font-weight: bold;
+}
+
+.footer2 h9{
+    font-family: 'Open sans';
+    font-size: 12px;
+    color: #F1F2F5;
 }

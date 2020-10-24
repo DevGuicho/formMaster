@@ -282,7 +282,7 @@
           </div>
           <!-- Grupo: Numero -->
           <div class="form__group p2" id="telephoneGroup">
-            <label for="telephone" class="form__label">Numero de Celular</label>
+            <label for="telephone" class="form__label">Número de Celular</label>
             <div class="form__group--input">
               <input
                 type="tel"
@@ -306,9 +306,23 @@
               <i class="formulario__validacion--estado fas fa-times-circle"></i>
             </div>
           </div>
+           <!-- Grupo: Estado Civil -->
+           <div class="form__group p1" id="nacionalityGroup">
+            <label for="nacionality" class="form__label">Estado Civil</label>
+            <div class="form__group--input">
+              <select class="form__input" name="nacionality" id="nacionality" >
+                <option value="A">Casado</option>
+                <option value="B">Divorciado</option>
+                <option value="C">Soltero</option>
+                <option value="D">Union Libre</option>
+                <option value="E">Viudo</option>
+                </select>
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+          </div>
 
           <!-- Grupo: CURP -->
-          <div class="form__group p3" id="curpGroup">
+          <div class="form__group p2" id="curpGroup">
             <label for="email" class="form__label">CURP</label>
             <div class="form__group--input">
               <input type="text" name="curp" id="curp" class="form__input" />
@@ -445,7 +459,30 @@
             </div>
             <p class="formulario__input--error">El usuario</p>
           </div>
-
+          <!-- Grupo: Cursos propedéuticos -->
+          <div class="form__group p2">
+            <label for="carrer" class="form__label">¿Has asistido a los cursos propedéuticos de este Departamento anteriormente?</label>
+            <div class="form__group--input">
+              <select class="form__input">
+                <option value="A">Si</option>
+                <option value="B">No</option>
+              </select>
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
+          <!-- Grupo: Años -->
+          <div class="form__group p2">
+            <label for="carrer" class="form__label">¿En qué años?</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input--error">El usuario</p>
+          </div>
           <!-- Grupo: Motivos -->
           <div class="form__group p6">
             <label for="motivation" class="form__label"

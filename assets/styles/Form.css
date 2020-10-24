@@ -194,6 +194,8 @@ body {
   grid-template-columns: repeat(6, auto [col-start]);
   grid-template-rows: auto;
   column-gap: 40px;
+  display: flex;
+  flex-direction: column;
   
 }
 .formulario {
@@ -349,10 +351,11 @@ body {
 .btn__submit {
   background: #1f8824;
   height: 60px;
-  width: 100%;
+  width: 25%;
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  align-self: center;
   color: white;
   font-weight: 600;
   font-size: 18px;

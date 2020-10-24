@@ -52,11 +52,10 @@
           <i class="fas fa-arrow-left"></i>
         </div>
         <ol class="aside__options">
-          <li class="aside__options--item">
-            <i class="fas fa-user-friends"></i>
-          </li>
+          <li class="aside__options--item"><i class="fas fa-user-friends"></i></li>
           <li class="aside__options--item"><i class="fas fa-home"></i></li>
           <li class="aside__options--item"><i class="fas fa-cog"></i></li>
+          <li class="aside__options--item"></li>
         </ol>
       </div>
     </aside>
@@ -84,7 +83,7 @@
 
           <!-- Grupo: Nombre -->
           <div class="form__group p3" id="nameGroup">
-            <label for="name" class="form__label">Nombre</label>
+            <label for="name" class="form__label">Nombre(s)</label>
             <div class="form__group--input">
               <input type="text" name="name" id="name" class="form__input" />
               <i class="formulario__validacion--estado fas fa-times-circle"></i>
@@ -146,10 +145,9 @@
             </div>
             <p class="formulario__input--error">El usuario</p>
           </div>
-
-          <!-- Grupo: Domicilio -->
-          <div class="form__group p4" id="adressGroup">
-            <label for="adress" class="form__label">Domicilio</label>
+          <!-- Grupo: Calle-->
+          <div class="form__group p3" id="adressGroup">
+            <label for="adress" class="form__label">Calle</label>
             <div class="form__group--input">
               <input
                 type="text"
@@ -159,11 +157,129 @@
               />
               <i class="formulario__validacion--estado fas fa-times-circle"></i>
             </div>
-            <p class="formulario__input--error">
-              Este campo no debe tener caracteres especiales
-            </p>
           </div>
 
+          <!-- Grupo: Numero Exterior -->
+          <div class="form__group p1" id="adressGroup">
+            <label for="adress" class="form__label">Número Exterior</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+          </div>
+
+          <!-- Grupo: Numero Interior-->
+          <div class="form__group p1" id="adressGroup">
+            <label for="adress" class="form__label">Número Interior</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+          </div>
+           <!-- Grupo: Código Postal-->
+           <div class="form__group p1" id="adressGroup">
+            <label for="adress" class="form__label">Código Postal</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+          </div>
+          <!-- Grupo: Colonia-->
+          <div class="form__group p2" id="adressGroup">
+            <label for="adress" class="form__label">Colonia</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+          </div>
+          
+          <!-- Grupo: Ciudad-->
+          <div class="form__group p1" id="adressGroup">
+            <label for="adress" class="form__label">Ciudad</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+          </div>
+          <!-- Grupo: Estado-->
+          <div class="form__group p1" id="adressGroup">
+            <label for="adress" class="form__label">Estado</label>
+            <div class="form__group--input">
+              <select class="form__input" name="nacionality" id="nacionality" >
+                <option value="A">Aguascalientes</option>
+                <option value="B">Baja California</option>
+                <option value="C">Baja California Sur</option>
+                <option value="D">Campeche</option>
+                <option value="E">Coahuila</option>
+                <option value="F">Colima</option>
+                <option value="G">Chiapas</option>
+                <option value="H">Chihuahua</option>
+                <option value="I">Ciudad de México</option>
+                <option value="J">Durango</option>
+                <option value="K">Guanajuato</option>
+                <option value="L">Guerro</option>
+                <option value="M">Hidalgo</option>
+                <option value="N">Jalisco</option>
+                <option value="O">Estado de México</option>
+                <option value="P">Michoacán</option>
+                <option value="Q">Morelos</option>
+                <option value="R">Nayarit</option>
+                <option value="S">Nuevo León</option>
+                <option value="T">Oaxaca</option>
+                <option value="U">Puebla</option>
+                <option value="V">Querétaro</option>
+                <option value="W">Quintana Roo</option>
+                <option value="X">San Luis Potosi</option>
+                <option value="QQ">Sinaloa</option>
+                <option value="RR">Sonara</option>
+                <option value="SS">Tabasco</option>
+                <option value="TT">Tamaulipas</option>
+                <option value="UU">Tlaxcala</option>
+                <option value="VV">Veracruz</option>
+                <option value="WW">Yucatán</option>
+                <option value="XX">Zacatecas</option>
+                </select>
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+          </div>
+          <!-- Grupo: País-->
+          <div class="form__group p2" id="adressGroup">
+            <label for="adress" class="form__label">País</label>
+            <div class="form__group--input">
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                class="form__input"
+              />
+              <i class="formulario__validacion--estado fas fa-times-circle"></i>
+            </div>
+          </div>
           <!-- Grupo: Numero -->
           <div class="form__group p2" id="telephoneGroup">
             <label for="telephone" class="form__label">Numero de Celular</label>
@@ -176,11 +292,10 @@
               />
               <i class="formulario__validacion--estado fas fa-times-circle"></i>
             </div>
-            <p class="formulario__input--error">Ingrese un formato valido</p>
           </div>
 
           <!-- Grupo: Nacionalidad -->
-          <div class="form__group p2" id="nacionalityGroup">
+          <div class="form__group p1" id="nacionalityGroup">
             <label for="nacionality" class="form__label">Nacionalidad</label>
             <div class="form__group--input">
               <select class="form__input" name="nacionality" id="nacionality" >
@@ -190,13 +305,10 @@
                 </select>
               <i class="formulario__validacion--estado fas fa-times-circle"></i>
             </div>
-            <p class="formulario__input--error">
-              El Este campo no debe contener numeros ni caracteres especiales
-            </p>
           </div>
 
           <!-- Grupo: CURP -->
-          <div class="form__group p4" id="curpGroup">
+          <div class="form__group p3" id="curpGroup">
             <label for="email" class="form__label">CURP</label>
             <div class="form__group--input">
               <input type="text" name="curp" id="curp" class="form__input" />

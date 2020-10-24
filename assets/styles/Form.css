@@ -183,7 +183,6 @@ body {
   align-items: flex-start;
   grid-area: main;
   padding: 35px 60px;
-  border: 1px solid black;
 }
 .main__content {
   width: 100%;
@@ -406,7 +405,7 @@ body {
   list-style: none;
   background: #80004a;
   justify-content: space-evenly;
- 
+  border-radius: 5px;
 }
 
 .Tabs li a{
@@ -423,12 +422,14 @@ body {
 }
 .Tab_click{
   background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
 }
 .Tab_text{
   margin-left: 5px;
 }
-
-
+.secciones{
+  width: 100%;
+}
 .footer {
   width: 100%;
   height: 180px;

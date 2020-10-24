@@ -43,7 +43,7 @@
         </div>
       </div>
     </header>
-    
+
     
     
     <aside class="aside">
@@ -78,8 +78,8 @@
             <li><a href="#Tab3"><i class="fas fa-file-upload"></i><div class="Tab_text">Curriculum Vitae</div></a></li>
           </ul>
         </nav>
-        
-        <div class="formulario" id="Tab1">
+      <div class="secciones" id="Tab1">
+        <div class="formulario" >
           <h3 class="form__title">Información Personal</h3>
 
           <!-- Grupo: Nombre -->
@@ -231,8 +231,9 @@
             </p>
           </div>
         </div>
-
-        <div class="formulario" id="Tab2">
+      </div>
+      <div class="secciones" id="Tab2">
+        <div class="formulario">
           <h3 class="form__title">Información General</h3>
 
           <!-- Grupo: Institución de Estudios -->
@@ -350,59 +351,62 @@
             <p class="formulario__input--error">El usuario</p>
           </div>
         </div>
-
-        <div class="content" id="Tab3">
-          <div class="formulario p4 r2">
-            <h3 class="form__title">Curriculum Vitae</h3>
-
-            <!-- Grupo: CV -->
-            <div class="form__group p6" >
-              <label for="institution" class="form__label"
-                >Anexar a esta solicitud curriculum vitae con fotografía</label
-              >
-              <div class="form__group--input">
-                <div class="dropfile">
-                  <i class="fas fa-upload"></i>
-                  <span class="dropfile__text">Drop your file here</span>
+      </div>
+        
+        <div class="secciones" id="Tab3">
+          <div class="content">
+            <div class="formulario p4 r2">
+              <h3 class="form__title">Curriculum Vitae</h3>
+          
+              <!-- Grupo: CV -->
+              <div class="form__group p6" >
+                <label for="institution" class="form__label"
+                  >Anexar a esta solicitud curriculum vitae con fotografía</label
+                >
+                <div class="form__group--input">
+                  <div class="dropfile">
+                    <i class="fas fa-upload"></i>
+                    <span class="dropfile__text">Drop your file here</span>
+                  </div>
+                  <input
+                    type="file"
+                    name="cv"
+                    id="cv"
+                    class="form__input--file"
+                  />
+                  <label for="cv" class="dropfile__label">Upload</label>
                 </div>
-                <input
-                  type="file"
-                  name="cv"
-                  id="cv"
-                  class="form__input--file"
-                />
-                <label for="cv" class="dropfile__label">Upload</label>
+                <p class="formulario__input--error">El usuario</p>
               </div>
-              <p class="formulario__input--error">El usuario</p>
             </div>
-          </div>
-          <div class="formulario p2 r1">
-            <h3 class="form__title">Maestria</h3>
-
-            <!-- Grupo: Maestria -->
-            <div class="form__group p6">
-              <label for="master" class="form__label"
-                >Seleccione una maestría</label
-              >
-              <div class="form__group--input">
-                <select name="master" id="master"class="form__input">
-                  <option value="A">Opción 1</option>
-                  <option value="B">Opción 2</option>
-                </select>
-                <i
-                  class="formulario__validacion--estado fas fa-times-circle"
-                ></i>
+            <div class="formulario p2 r1">
+              <h3 class="form__title">Maestria</h3>
+          
+              <!-- Grupo: Maestria -->
+              <div class="form__group p6">
+                <label for="master" class="form__label"
+                  >Seleccione una maestría</label
+                >
+                <div class="form__group--input">
+                  <select name="master" id="master"class="form__input">
+                    <option value="A">Opción 1</option>
+                    <option value="B">Opción 2</option>
+                  </select>
+                  <i
+                    class="formulario__validacion--estado fas fa-times-circle"
+                  ></i>
+                </div>
+                <p class="formulario__input--error">El usuario</p>
               </div>
-              <p class="formulario__input--error">El usuario</p>
             </div>
-          </div>
-          <div class="formulario__panel p2 r1">
-            <p class="message disable" id="panelFor">
-              Por favor llene correctamente el formulario.
-            </p>
-            <button class="btn__submit">
-              <i class="fas fa-check"></i> Enviar
-            </button>
+            <div class="formulario__panel p2 r1">
+              <p class="message disable" id="panelFor">
+                Por favor llene correctamente el formulario.
+              </p>
+              <button class="btn__submit">
+                <i class="fas fa-check"></i> Enviar
+              </button>
+            </div>
           </div>
         </div>
       </form>

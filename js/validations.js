@@ -1,21 +1,24 @@
+/*
 const form = document.getElementById("form");
 const inputs = document.querySelectorAll("#form input");
+*/
+
 $(document).ready(function(){
   $('ul.Tabs li a:first').addClass('Tab_click');
-  $('.formulario').hide();
-  $('.content').hide();
-  $('.formulario:first').show();
+  $('.secciones').hide();
+  $('.secciones:first').show();
 
   $('ul.Tabs li a').click(function(){
     $('ul.Tabs li a').removeClass('Tab_click');
     $(this).addClass('Tab_click');
-    $('.formulario').hide();
-    $('.content').hide();
+    $('.secciones').hide();
+
     var clickTab = $(this).attr('href');
     $(clickTab).show();
     return false;
   });
 });
+/*
 const expresiones = {
   numbersAndLetters: /^[a-zA-ZÀ-ÿ0-9\.\#\s]{1,260}$/, // Letras, numeros, numeral y punto
   onlyLetters: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -112,3 +115,4 @@ form.addEventListener("submit", (e) => {
       .classList.remove("formulario__input-error-active");
   }
 });
+*/
